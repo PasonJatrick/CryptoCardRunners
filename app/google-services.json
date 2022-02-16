@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406129828374",
+    "project_id": "cryptobattle-bfcb0",
+    "storage_bucket": "cryptobattle-bfcb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406129828374:android:9caa47f55abf0777950b37",
+        "android_client_info": {
+          "package_name": "com.mobdeve.s11.bueno.jasonpatrick.cryptobattle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406129828374-982e78u4job9pviloabuf9deptmplpkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiD22pQPwH2FreBnqSdI4ninFlT6GElO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406129828374-982e78u4job9pviloabuf9deptmplpkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ViewPackActivity">
+
+    <TextView
+        android:id="@+id/tv_deck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="alien frens (deck name)"
+        android:textStyle="italic"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Owner: name ('???' if unredeemed)"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_deck"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card1"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_owner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_angel"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card2"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_owner"
+        app:layout_constraintLeft_toRightOf="@id/cv_card1"
+        app:layout_constraintRight_toLeftOf="@id/cv_card3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_cone"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card3"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_owner"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_devil"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card4"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_dice"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card5"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card2"
+        app:layout_constraintLeft_toRightOf="@id/cv_card4"
+        app:layout_constraintRight_toLeftOf="@id/cv_card6"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_drip"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card6"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_emo"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card7"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_farm"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card8"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card5"
+        app:layout_constraintLeft_toRightOf="@id/cv_card7"
+        app:layout_constraintRight_toLeftOf="@id/cv_card9"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_kid"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card9"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card6"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_space"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_card10"
+        android:layout_width="320px"
+        android:layout_height="320px"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintTop_toBottomOf="@id/cv_card7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/iv_image10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/af_steam"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Back"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cv_card8"
+        app:layout_constraintBottom_toBottomOf="@id/cv_card10"
+        app:layout_constraintLeft_toRightOf="@id/cv_card10"
+        app:layout_constraintRight_toRightOf="@id/cv_card9"
+        />
+
+    <TextView
+        android:id="@+id/tv_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="by Bueno &amp; Deslate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

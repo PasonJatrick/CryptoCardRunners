@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".PickStatsActivity">
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="10 HP Left. Pick a Stat and Mod"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_card"
+        android:layout_width="540px"
+        android:layout_height="540px"
+        android:src="@drawable/doodle_angel"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_cardR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="R: 123"
+        app:layout_constraintBottom_toTopOf="@id/tv_cardG"
+        app:layout_constraintLeft_toRightOf="@id/iv_card"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_cardG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="G: 456"
+        app:layout_constraintBottom_toTopOf="@id/tv_cardB"
+        app:layout_constraintLeft_toRightOf="@id/iv_card"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_cardB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="B: 789"
+        app:layout_constraintBottom_toBottomOf="@id/iv_card"
+        app:layout_constraintLeft_toRightOf="@id/iv_card"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_cardname"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Name: Angel Doodle\nOwner: Jason"
+        app:layout_constraintTop_toTopOf="@id/iv_card"
+        app:layout_constraintBottom_toTopOf="@id/tv_cardR"
+        app:layout_constraintLeft_toRightOf="@id/iv_card"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv_selectstat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Stat You Picked: ??? (or R/G/B)"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_card"
+        app:layout_constraintBottom_toTopOf="@id/tv_selectmod"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_selectmod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Mod You Picked: ??? (or Up/Down)"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_selectstat"
+        app:layout_constraintBottom_toTopOf="@id/btn_pickB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pickR"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="R"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_pickdown"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_pickG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pickG"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="G"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_pickdown"
+        app:layout_constraintRight_toLeftOf="@id/btn_pickB"
+        app:layout_constraintLeft_toRightOf="@id/btn_pickR"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pickB"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="B"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_pickdown"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_pickG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pickup"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Up"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_pickdown"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pickdown"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Down"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_pickup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Confirm"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/tv_credit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="by Bueno &amp; Deslate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ChooseCardActivity">
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="10 HP Left. Pick Your Card"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_left"
+        android:layout_width="540px"
+        android:layout_height="540px"
+        android:src="@drawable/doodle_angel"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_right"
+        />
+
+    <ImageView
+        android:id="@+id/iv_right"
+        android:layout_width="540px"
+        android:layout_height="540px"
+        android:src="@drawable/doodle_devil"
+        app:layout_constraintTop_toBottomOf="@id/tv_prompt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iv_left"
+        />
+
+    <TextView
+        android:id="@+id/tv_leftowner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Owner: Jason"
+        app:layout_constraintTop_toBottomOf="@id/iv_left"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_rightowner"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_leftname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Name: Angel Doodle"
+        app:layout_constraintTop_toBottomOf="@id/tv_leftowner"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_rightname"
+        android:paddingBottom="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_rightowner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Owner: Jason"
+        app:layout_constraintTop_toBottomOf="@id/iv_left"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_leftowner"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_rightname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="Name: Devil Doodle"
+        app:layout_constraintTop_toBottomOf="@id/tv_rightowner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_leftname"
+        android:paddingBottom="10dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_leftR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="R: 123"
+        app:layout_constraintTop_toBottomOf="@id/tv_leftname"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_rightname"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_leftG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="G: 456"
+        app:layout_constraintTop_toBottomOf="@id/tv_leftR"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_rightname"
+        android:paddingTop="5dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_leftB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="B: 789"
+        app:layout_constraintTop_toBottomOf="@id/tv_leftG"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_rightname"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_rightR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="R: 111"
+        app:layout_constraintTop_toBottomOf="@id/tv_rightname"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_leftname"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_rightG"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="G: 222"
+        app:layout_constraintTop_toBottomOf="@id/tv_rightR"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_leftname"
+        android:paddingTop="5dp"
+        android:gravity="left"
+        />
+
+    <TextView
+        android:id="@+id/tv_rightB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="B: 333"
+        app:layout_constraintTop_toBottomOf="@id/tv_rightG"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_leftname"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="left"
+        />
+
+    <Button
+        android:id="@+id/btn_pickleft"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Pick Left"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_pickright"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pickright"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Pick Right"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/btn_confirm"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_pickleft"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Confirm"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/tv_credit"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:text="You Picked: ??? (Left/Right)"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv_leftB"
+        app:layout_constraintBottom_toTopOf="@id/btn_pickleft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_credit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:text="by Bueno &amp; Deslate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
